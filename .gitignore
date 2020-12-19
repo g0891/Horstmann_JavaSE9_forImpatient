@@ -1,3 +1,5 @@
 /.idea
 /out
+/.test
 Horstmann_JavaSE9_forImpatient.iml
+.gitignore
