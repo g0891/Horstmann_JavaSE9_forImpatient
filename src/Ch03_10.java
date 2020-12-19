@@ -1,5 +1,3 @@
-import java.sql.SQLOutput;
-
 public class Ch03_10 {
     public static void main(String[] args) {
         int size = 20;
