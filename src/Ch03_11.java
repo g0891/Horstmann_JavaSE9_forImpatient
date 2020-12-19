@@ -3,25 +3,33 @@ import java.io.FileFilter;
 
 public class Ch03_11 {
     public static void main(String[] args) {
-        File f = new File("./.test/testdir");
+        File dir = new File("./.test/testdir");
 
-        if (!f.exists()) {
+        if (!dir.exists()) {
             System.out.println("Dir does not exist");
             return;
         }
 
         System.out.println("Using lambda:");
-        File[] filesList_1 = f.listFiles(File::isDirectory);
-        printNames(filesList_1);
+        printNames(getDirs_1(dir));
 
         System.out.println("Using anonymous class:");
-        File[] filesList_2 = f.listFiles(new FileFilter() {
+        printNames(getDirs_2(dir));
+    }
+
+
+
+    public static File[] getDirs_1(File dir) {
+        return dir.listFiles(File::isDirectory);
+    }
+
+    public static File[] getDirs_2(File dir) {
+        return dir.listFiles(new FileFilter() {
             @Override
             public boolean accept(File pathname) {
                 return pathname.isDirectory();
             }
         });
-        printNames(filesList_2);
     }
 
     static private void printNames(File[] files) {
@@ -29,4 +37,5 @@ public class Ch03_11 {
             System.out.println(file.getName());
         }
     }
+
 }
