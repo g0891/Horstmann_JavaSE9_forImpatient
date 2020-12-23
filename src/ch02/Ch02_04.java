@@ -1,6 +1,4 @@
-package Ch02;
-
-import java.sql.SQLOutput;
+package ch02;
 
 public class Ch02_04 {
     public static void main(String[] args) {

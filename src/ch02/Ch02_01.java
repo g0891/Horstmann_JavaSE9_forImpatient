@@ -1,4 +1,4 @@
-package Ch02;
+package ch02;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
