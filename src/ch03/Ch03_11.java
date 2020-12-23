@@ -1,4 +1,4 @@
-package Ch03;
+package ch03;
 
 import java.io.File;
 import java.io.FileFilter;

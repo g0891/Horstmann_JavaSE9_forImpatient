@@ -1,4 +1,4 @@
-package Ch06;
+package ch06;
 
 import java.util.ArrayList;
 

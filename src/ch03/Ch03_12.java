@@ -1,8 +1,6 @@
-package Ch03;
+package ch03;
 
 import java.io.File;
-import java.io.FilenameFilter;
-import java.util.regex.Pattern;
 
 public class Ch03_12 {
     public static void main(String[] args) {
