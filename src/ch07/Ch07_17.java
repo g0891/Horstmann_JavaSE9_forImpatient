@@ -26,15 +26,5 @@ public class Ch07_17 {
         }
 
     }
-
-//
-//    public static class StorageChecked<T> {
-//        private List<T> storage = Collections.checkedList(new ArrayList<>(), T)
-//        public void add(T elem) {
-//            storage.add(elem);
-//        }
-//        public T get(int index) {
-//            return storage.get(index);
-//        }
-//    }
+    
 }
