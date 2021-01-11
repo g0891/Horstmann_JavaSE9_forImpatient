@@ -9,19 +9,17 @@ import java.util.stream.Collectors;
 
 public class Ch08_07 {
     public static void main(String[] args) throws IOException {
-        String text = Files.readString(Paths.get("./.test/sampletext2.txt"));
-        String[] lexems = text.split("\\s");
 
         System.out.println("First 100 words:");
-        Files.lines(Paths.get("./.test/sampletext2.txt"))
-                .map(line -> line.split("\\s+"))
+        Files.lines(Paths.get("./.test/war-and-peace.txt"))
+                .map(line -> line.split("\\PL+"))
                 .flatMap(Arrays::stream)
                 .filter(Ch08_07::isAlphabeticWord)
                 .limit(100)
                 .forEach(System.out::println);
 
         System.out.println("\n10 most frequent words (ignoring case):");
-        Files.lines(Paths.get("./.test/sampletext2.txt"))
+        Files.lines(Paths.get("./.test/war-and-peace.txt"))
                 .map(line -> line.split("\\s+"))
                 .flatMap(Arrays::stream)
                 .filter(Ch08_07::isAlphabeticWord)

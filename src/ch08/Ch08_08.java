@@ -38,6 +38,8 @@ public class Ch08_08 {
         ));
         habitsByCity.entrySet().stream().forEach(entry -> System.out.println(entry.getKey() + " : " + entry.getValue()));
 
+
+
     }
 
     public static class User {
